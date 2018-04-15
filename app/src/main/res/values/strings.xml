@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ATM24_app</string>
+    <string name="action_settings">Settings</string>
+    <string name="ticket">Заявка</string>
+    <string name="title_activity_request_total_info">RequestTotalInfoActivity</string>
+    <string name="exampleText">Замена POS-терминала; замена расходных материалов; изъятие карт; замена шторки через-стенника NCR; установлен Деталь №1 (1 шт.); снят Деталь №1 (1 шт.); И Еще много текста на подобии этого будет хранится тут</string>
+    <string name="info">Информация</string>
+    <string name="problem">Проблема</string>
+    <string name="adress">Адрес</string>
+    <string name="timeTo">Время реагирования:</string>
+    <string name="ready">Готово</string>
+    <string name="identify">Идентификатор</string>
+    <string name="showColors">Показывать цвета заявок</string>
+    <string name="_id_engineer">1324568421</string>
+
+</resources>
