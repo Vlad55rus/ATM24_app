@@ -1,10 +1,5 @@
 package com.my_company.atm24_app;
 
-import android.app.DownloadManager;
-
-import java.util.ArrayList;
-
-//View of request on mainactivity
 public class RequestView {
 
 

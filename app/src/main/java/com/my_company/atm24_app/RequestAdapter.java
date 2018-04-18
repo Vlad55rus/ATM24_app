@@ -3,6 +3,7 @@ package com.my_company.atm24_app;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 import java.util.ArrayList;
+import java.util.Locale;
 
 import static android.support.v4.content.ContextCompat.startActivity;
 
@@ -32,12 +34,18 @@ public class RequestAdapter extends RecyclerView.Adapter<RequestAdapter.RequestV
 
     @Override
     public void onBindViewHolder(RequestViewHolder holder, int position) {
-        //Установка текста в формы для заказов
-
-        holder.request_id.setText(requestsArray.get(position).getId_request());
-        //Log.d(LOG_TAG, "!!!!!! id = "+ requestsArray.get(position).getId_request());
-        holder.adress_id.setText(requestsArray.get(position).getAdress());
-        holder.time_id.setText(requestsArray.get(position).getTime_reaction());
+        //TODO Установка текста в формы для заказов из бд
+        holder.request_id.setText(String.format("%s - %s", R.string.ticket, requestsArray.get(position).getId_request()));
+        holder.adress_id.setText(String.format("%s: %s", R.string.adress, requestsArray.get(position).getAdress()));
+        holder.time_id.setText(String.format("%s: %s", R.string.timeTo, requestsArray.get(position).getTime_reaction()));
+        switch(requestsArray.get(position).getStatus()){
+            case "1111":
+                holder.btn.setBackgroundColor(Color.GREEN);
+                break;
+            case "1234":
+                holder.btn.setBackgroundColor(Color.YELLOW);
+                break;
+        }
         holder.btn.setOnClickListener(new View.OnClickListener() {
 
             @Override

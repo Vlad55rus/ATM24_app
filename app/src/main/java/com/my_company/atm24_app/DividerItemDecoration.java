@@ -11,12 +11,9 @@ import java.util.ArrayList;
 public class DividerItemDecoration extends RecyclerView.ItemDecoration {
 
     private Drawable mDivider;
-   //TODO количество блоков ??
-    // private ArrayList<RequestView> arrayList;
 
     public DividerItemDecoration(Drawable divider) {
         mDivider = divider;
-        //this.arrayList = arrayList;
     }
 
     @Override

@@ -6,6 +6,9 @@
     <color name="darkGrey">#8c8c90</color>
     <color name="lightGrey">#b5b5b5</color>
     <color name="white">#ffffff</color>
-    <color name="forDoneBtns">#373944</color>
+    <color name="forDoneBtns">#9b9b9b</color>
     <color name="black">#000000</color>
+    <color name="superLightGray">#cfcdcd</color>
+    <color name="notCheckedGray">#e8e8e8</color>
+    <color name="nextBtn_color">#504c58</color>
 </resources>

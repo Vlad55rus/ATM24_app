@@ -12,5 +12,27 @@
     <string name="identify">Идентификатор</string>
     <string name="showColors">Показывать цвета заявок</string>
     <string name="_id_engineer">1324568421</string>
+    <string name="next">Дальше</string>
+    <string name="away_time">Время отъезда</string>
+    <string name="end_time">Время окончания работ</string>
+    <string name="start_time">Время начала работ</string>
+    <string name="arrive_time">Время приезда</string>
+    <string name="currentRequestString">Заявка - 123213</string>
+    <string name="add_photo">Добавить фото</string>
+    <string name="add_comment">Добавить комментарий</string>
+    <string name="sets">Настройки</string>
+    <string name="exampleInfoText">30.03.18 17:53: Шамин И.Н.:Зип заказан;</string>
+    <string name="Done_status">Завершено</string>
+    <string name="onTest_color">На тестировании</string>
+    <string name="needIncasation_status">Требуется инкасация</string>
+    <string name="chooseStatus_status">Укажите статус завершения работы</string>
+    <string name="onWork_status">В работе</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="testPO_string">Тестирование ПО</string>
+    <string name="replaceJournal_string">Замена журнальной  ленты</string>
+    <string name="tests_string">Тестирование</string>
+    <string name="pickingElectr_string">Снятие электронного  журнала</string>
+    <string name="checking_string">Осмотр</string>
+    <string name="standartWork_string">Стандартные работы</string>
 
 </resources>

@@ -11,35 +11,30 @@
 
     <ImageButton
         android:id="@+id/settingsImage"
-        android:layout_width="50dp"
-        android:layout_height="46dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginBottom="28dp"
         android:layout_marginEnd="24dp"
         android:layout_marginStart="64dp"
-        android:layout_marginTop="7dp"
+        android:layout_marginTop="16dp"
         android:background="@color/lightGrey"
-        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
         app:layout_constraintEnd_toStartOf="@+id/request"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@android:drawable/ic_menu_info_details" />
+        app:srcCompat="@drawable/ic_list" />
 
     <ImageView
         android:id="@+id/searchRequest"
-        android:layout_width="44dp"
-        android:layout_height="39dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginBottom="34dp"
         android:layout_marginEnd="84dp"
         android:layout_marginStart="43dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/request"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_search" />
+        app:srcCompat="@drawable/ic_search_black" />
 
     <TextView
         android:id="@+id/request"
@@ -47,14 +42,12 @@
         android:layout_height="23dp"
         android:layout_alignBottom="@+id/searchRequest"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="50dp"
         android:layout_marginEnd="51dp"
         android:layout_marginStart="48dp"
         android:layout_marginTop="16dp"
         android:text="Список заявок"
         android:textColor="@color/black"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
         app:layout_constraintEnd_toStartOf="@+id/searchRequest"
         app:layout_constraintStart_toEndOf="@+id/settingsImage"
         app:layout_constraintTop_toTopOf="parent" />

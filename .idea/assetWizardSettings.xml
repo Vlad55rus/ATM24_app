@@ -16,11 +16,27 @@
                             <entry key="actionbar">
                               <value>
                                 <PersistentState>
+                                  <option name="children">
+                                    <map>
+                                      <entry key="image">
+                                        <value>
+                                          <PersistentState>
+                                            <option name="values">
+                                              <map>
+                                                <entry key="trimmed" value="true" />
+                                              </map>
+                                            </option>
+                                          </PersistentState>
+                                        </value>
+                                      </entry>
+                                    </map>
+                                  </option>
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="imageAsset" value="E:\Progs\ATM24_app\w256h2561380453921Search256x25632.png" />
-                                      <entry key="outputName" value="ic-search" />
+                                      <entry key="imageAsset" value="E:\Android icons\material-design-icons-3.0.1\content\ios\ic_add_circle_white.imageset\ic_add_circle_white.png" />
+                                      <entry key="outputName" value="ic_white_black" />
+                                      <entry key="themeColor" value="090709" />
                                     </map>
                                   </option>
                                 </PersistentState>
