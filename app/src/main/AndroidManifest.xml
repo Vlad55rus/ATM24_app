@@ -2,14 +2,25 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.my_company.atm24_app">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:name="ATM24">
+
+        <meta-data android:name="DATABASE" android:value="sugar_example.db" />
+        <meta-data android:name="VERSION" android:value="2" />
+        <meta-data android:name="QUERY_LOG" android:value="true" />
+        <meta-data android:name="DOMAIN_PACKAGE_NAME" android:value="com.example" />
+
         <activity
-            android:name=".MainActivity"
+            android:name=".activitiesClasses.MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,16 +28,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SettingsActivity" />
-        <activity android:name=".request_view" />
+        <activity android:name=".activitiesClasses.SettingsActivity" />
+        <activity android:name=".activitiesClasses.OrderActivity" />
         <activity
-            android:name=".RequestTotalInfoActivity"
+            android:name=".activitiesClasses.OrderTotalInfoActivity"
             android:label="@string/title_activity_request_total_info"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".activity_worktime" />
-        <activity android:name=".activity_choose_status" />
-        <activity android:name=".WorksActivity" />
-        <activity android:name=".StandartWorksActivity"></activity>
+        <activity android:name=".activitiesClasses.WorkTimeActivity" />
+        <activity android:name=".activitiesClasses.StatusesActivity" />
+        <activity android:name=".activitiesClasses.WorksActivity" />
+        <activity android:name=".activitiesClasses.StandartWorksActivity" />
+        <activity android:name=".activitiesClasses.PhotoAdding" />
+        <activity android:name=".activitiesClasses.CommentActivity" />
+        <activity android:name=".activitiesClasses.OwnWorks"></activity>
     </application>
 
 </manifest>

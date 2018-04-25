@@ -4,43 +4,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activitiesClasses.StatusesActivity">
+    tools:context=".activitiesClasses.OwnWorks"
+    tools:layout_editor_absoluteY="81dp">
 
     <Button
-        android:id="@+id/nextBtn"
+        android:id="@+id/nextBtn5"
         android:layout_width="388dp"
         android:layout_height="0dp"
         android:background="@color/nextBtn_color"
-        android:text="@string/next"
+        android:text="@string/ready"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="81dp"
-        android:layout_marginStart="63dp"
-        android:layout_marginTop="24dp"
-        android:text="@string/chooseStatus_status"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/ownWorks_string"
         android:textColor="@color/black"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.366"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <EditText
+        android:id="@+id/textAdded3"
+        android:layout_width="324dp"
+        android:layout_height="121dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/nextBtn5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/recViewStatuses"
+        android:id="@+id/recViewOwnWorks"
         android:layout_width="368dp"
-        android:layout_height="398dp"
+        android:layout_height="164dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="59dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 </android.support.constraint.ConstraintLayout>

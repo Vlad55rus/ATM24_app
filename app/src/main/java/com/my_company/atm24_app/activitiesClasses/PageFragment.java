@@ -1,4 +1,4 @@
-package com.my_company.atm24_app;
+package com.my_company.atm24_app.activitiesClasses;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -7,6 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.my_company.atm24_app.R;
 
 public class PageFragment extends Fragment {
     public static final String ARG_PAGE = "ARG_PAGE";

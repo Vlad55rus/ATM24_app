@@ -1,16 +1,15 @@
-package com.my_company.atm24_app;
+package com.my_company.atm24_app.activitiesClasses;
 
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toolbar;
+
+import com.my_company.atm24_app.R;
 
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -18,7 +17,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-public class activity_worktime extends AppCompatActivity {
+public class WorkTimeActivity extends AppCompatActivity {
 
     boolean timeOk;
 
@@ -36,7 +35,7 @@ public class activity_worktime extends AppCompatActivity {
 
         Button doneBtn = (Button) findViewById(R.id.doneBtn);
 
-        final AlertDialog.Builder builder = new AlertDialog.Builder(activity_worktime.this);
+        final AlertDialog.Builder builder = new AlertDialog.Builder(WorkTimeActivity.this);
         builder.setTitle("Предупреждение")
                 .setMessage("Заполните все поля")
                 .setCancelable(false)
@@ -47,7 +46,7 @@ public class activity_worktime extends AppCompatActivity {
                     }
                 });
 
-        final AlertDialog.Builder builderTwo = new AlertDialog.Builder(activity_worktime.this);
+        final AlertDialog.Builder builderTwo = new AlertDialog.Builder(WorkTimeActivity.this);
         builderTwo.setTitle("Предупреждение")
                 .setMessage("Некорректно заполнено время")
                 .setCancelable(false)
@@ -104,7 +103,7 @@ public class activity_worktime extends AppCompatActivity {
                 }
                 else{
                     //TODO здесь будет запись в бд
-                    Intent intent = new Intent(activity_worktime.this,activity_choose_status.class);
+                    Intent intent = new Intent(WorkTimeActivity.this,StatusesActivity.class);
                     startActivity(intent);
                 }
             }

@@ -1,6 +1,5 @@
-package com.my_company.atm24_app;
+package com.my_company.atm24_app.activitiesClasses;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
@@ -10,17 +9,18 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.my_company.atm24_app.R;
+
 import java.util.ArrayList;
-import java.util.Locale;
 
 import static android.support.v4.content.ContextCompat.startActivity;
 
-public class RequestAdapter extends RecyclerView.Adapter<RequestAdapter.RequestViewHolder> {
-    private ArrayList<RequestView> requestsArray ;
-    private static final String LOG_TAG = "RequestAdapter";
+public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.RequestViewHolder> {
+    private ArrayList<Order> requestsArray ;
     private Context context;
 
-    RequestAdapter(ArrayList<RequestView> requestsArray, Context context) {
+    OrderAdapter(ArrayList<Order> requestsArray, Context context) {
         this.requestsArray = requestsArray;
         this.context = context;
     }
@@ -35,9 +35,10 @@ public class RequestAdapter extends RecyclerView.Adapter<RequestAdapter.RequestV
     @Override
     public void onBindViewHolder(RequestViewHolder holder, int position) {
         //TODO Установка текста в формы для заказов из бд
-        holder.request_id.setText(String.format("%s - %s", R.string.ticket, requestsArray.get(position).getId_request()));
-        holder.adress_id.setText(String.format("%s: %s", R.string.adress, requestsArray.get(position).getAdress()));
-        holder.time_id.setText(String.format("%s: %s", R.string.timeTo, requestsArray.get(position).getTime_reaction()));
+        holder.request_id.setText(String.format("Заявка - %s", requestsArray.get(position).getId_request()));
+        holder.adress_id.setText(String.format("Адрес: %s", requestsArray.get(position).getAdress()));
+        holder.time_id.setText(String.format("Время реагирования: %s", requestsArray.get(position).getTime_reaction()));
+
         switch(requestsArray.get(position).getStatus()){
             case "1111":
                 holder.btn.setBackgroundColor(Color.GREEN);
@@ -46,12 +47,12 @@ public class RequestAdapter extends RecyclerView.Adapter<RequestAdapter.RequestV
                 holder.btn.setBackgroundColor(Color.YELLOW);
                 break;
         }
+
         holder.btn.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(context,RequestTotalInfoActivity.class);
-                //TODO В будущем нужно будет передавать id, чтобы сделать запрос из БД на след активити и достать нужную инфу
+                Intent intent = new Intent(context,OrderTotalInfoActivity.class);
                 startActivity(context,intent,null);
             }
         });
@@ -69,6 +70,7 @@ public class RequestAdapter extends RecyclerView.Adapter<RequestAdapter.RequestV
         TextView adress_id;
         TextView time_id;
         Button btn;
+
         RequestViewHolder(View itemView) {
             super(itemView);
             request_id = (TextView) itemView.findViewById(R.id.request_id);
@@ -76,7 +78,5 @@ public class RequestAdapter extends RecyclerView.Adapter<RequestAdapter.RequestV
             time_id = (TextView) itemView.findViewById(R.id.time_id);
             btn = (Button) itemView.findViewById(R.id.btn);
         }
-
-
     }
 }

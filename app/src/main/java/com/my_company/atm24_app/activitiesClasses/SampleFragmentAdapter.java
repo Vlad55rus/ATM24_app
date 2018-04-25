@@ -1,4 +1,4 @@
-package com.my_company.atm24_app;
+package com.my_company.atm24_app.activitiesClasses;
 
 import android.content.Context;
 import android.support.v4.app.Fragment;

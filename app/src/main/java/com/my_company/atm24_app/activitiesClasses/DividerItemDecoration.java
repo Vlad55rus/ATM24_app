@@ -1,4 +1,4 @@
-package com.my_company.atm24_app;
+package com.my_company.atm24_app.activitiesClasses;
 
 import android.graphics.Canvas;
 import android.graphics.Rect;

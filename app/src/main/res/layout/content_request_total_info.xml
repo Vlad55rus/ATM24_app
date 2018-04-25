@@ -5,14 +5,14 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".RequestTotalInfoActivity"
+    tools:context=".activitiesClasses.OrderTotalInfoActivity"
     tools:showIn="@layout/activity_request_total_info">
 
     <ImageButton
         android:id="@+id/settingsImageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="28dp"
         android:layout_marginTop="16dp"
         android:background="@color/lightGrey"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,10 +23,11 @@
         android:id="@+id/currentRequest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
         android:text="@string/currentRequestString"
         android:textColor="@color/black"
+        android:textSize="18sp"
         app:layout_constraintStart_toEndOf="@+id/settingsImageButton"
         app:layout_constraintTop_toTopOf="parent" />
 
